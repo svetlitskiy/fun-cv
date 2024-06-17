@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  fun-cn-api-postgres:
+    image: postgis/postgis:15-3.3
+    container_name: fun-cn-api-postgres
+    ports:
+      - ${DB_PORT}:5432
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_DB: ${DB_DATABASE}
+    tmpfs:
+      - /data
+

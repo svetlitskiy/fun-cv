@@ -1,0 +1,16 @@
+{
+  "name": "fun-cv",
+  "repository": "https://github.com/svetlitskiy/fun-cv",
+  "version": "1.0.0",
+  "description": "Fun CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "frontend/*",
+    "backend/*"
+  ]
+}
